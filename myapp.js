@@ -58,4 +58,8 @@ let car = {
     }
             };
 console.log(car);
-
+function add(u,w) 
+    {return u+w;
+        }
+let result = add(28, 36);
+console.log (result);
