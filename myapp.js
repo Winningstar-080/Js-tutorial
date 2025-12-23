@@ -96,3 +96,37 @@ const arr = ["toy",
 ];
 console.log(arr[1]());
 //this will point to the array, because it invoked the function
+
+console.log (10 == 10); //loose equal to
+console.log ("Hello" == "hello"); //loose equal to, converts first before checking
+console.log (100 == "100"); //loose equal to
+console.log (100 === "100"); //strict equal to, checks straight
+console.log ( null == undefined ); //loose equal to
+console.log ( null === undefined ); //strict equal to
+console.log ( 100 != 10 ); //not equal to, converts first before checking
+console.log ( 100 != "100"); //not equal to, converts first before checking
+console.log ( 100 !== "100"); //strictnot equal to, checks straight
+
+var carsleft = 0,
+    carsright = 0,
+    trafficgreen = "yes";
+
+if ( trafficgreen == "yes" ) {
+    console.log("cross the road");
+}
+
+var trucksleft = 0,
+    trucksright = 0,
+    trafficgreen = "no";
+
+if ( trafficgreen === "yes" ) {
+    console.log("cross the road");
+}
+else if ( trucksleft === 0 && trucksright === 0 )
+    { console.log ("All clear, cross the road");
+    }
+
+
+let score = 45;
+    if (score >= 50) {console.log ("Passed"); }
+    else {console.log ("False");}
