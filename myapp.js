@@ -130,3 +130,34 @@ else if ( trucksleft === 0 && trucksright === 0 )
 let score = 45;
     if (score >= 50) {console.log ("Passed"); }
     else {console.log ("False");}
+
+var ClassRegister = [ "Umah", "Winner", "Micheal" ];
+    for (let i = 0; i < ClassRegister.length; i++) {
+        console.log(ClassRegister[i]);
+    }
+//What each part means: 
+//1. let i = 0
+//Start counting from index 0
+//2. i < classRegister.length
+//Keep going while there are still items
+//3. i++
+//Move to the next item
+//4. classRegister[i]
+//Get the name at the current position
+
+for (let i = ClassRegister.length - 1; i >=0; i--){
+    console.log(ClassRegister[i]);
+}
+//1. let i = ClassRegister.length - 1
+// starts counting from the rare
+//2. i >=0
+//keep going till it gets to the top
+//3. i--, Move to the next item (backwards)
+
+for (let index in ClassRegister){
+    console.log(ClassRegister[index]);
+}
+
+console.log (document.getElementsByTagName('p'));
+console.log (document.getElementsByTagName('h1'));
+console.log (document.getElementById("Hello world"));
