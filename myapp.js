@@ -160,4 +160,9 @@ for (let index in ClassRegister){
 
 console.log (document.getElementsByTagName('p'));
 console.log (document.getElementsByTagName('h1'));
-console.log (document.getElementById("Hello world"));
+console.log (document.getElementById ('hello'));//still produces null on the console tab
+console.log (document.getElementsByClassName('pClass'));
+console.log (document.querySelectorAll('.pClass'));
+console.log (document.querySelectorAll('#hello'));
+
+
