@@ -160,9 +160,13 @@ for (let index in ClassRegister){
 
 console.log (document.getElementsByTagName('p'));
 console.log (document.getElementsByTagName('h1'));
-console.log (document.getElementById ('hello'));//still produces null on the console tab
+console.dir (document.getElementById ("hello") ); //the problem was because of the position of the script tag
 console.log (document.getElementsByClassName('pClass'));
-console.log (document.querySelectorAll('.pClass'));
+console.log (document.querySelectorAll(".pClass"));
 console.log (document.querySelectorAll('#hello'));
+console.log (document.querySelectorAll('#hello, .pClass'));
 
+console.log (document.querySelectorAll (' p[data-content="123"], body > h1.pClass > span'));
 
+console.dir (document.getElementById ("hello").innerText = "new world" );//case sensitive
+console.dir (document.getElementById ("hello").innerText += " new year" );
