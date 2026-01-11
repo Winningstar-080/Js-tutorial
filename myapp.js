@@ -168,5 +168,35 @@ console.log (document.querySelectorAll('#hello, .pClass'));
 
 console.log (document.querySelectorAll (' p[data-content="123"], body > h1.pClass > span'));
 
-console.dir (document.getElementById ("hello").innerText = "new world" );//case sensitive
-console.dir (document.getElementById ("hello").innerText += " new year" );
+var pHello = document.getElementById ("hello");
+pHello.innerText = "new world" ;//case sensitive
+pHello.innerText += " new year" ;
+pHello.innerHTML += " <span> new being </span>" ;
+pHello.outerHTML = '<h2 id="hello">Happy New Year <span> 2026 </span></h2>';
+
+var spanH1 = document.querySelectorAll (' h1 span');
+spanH1[0].innerHTML = "new topic" ;
+
+var el = document.getElementById('style');
+el.style.background = "purple";
+el.style.color = "yellow";
+el.style.width = "200px";
+el .style.boarder = "10px";
+
+el.style.cssText += "height:50px";
+
+var select = document.getElementsByName('cars')[0];
+select.onclick = function( event ) {console.log (event);
+};
+
+function ClickCallback ( event ) {
+    console.log ('clicked by add event listner');
+}
+function ClickCallback1( event ) {
+    console.log ('clicked by add event listner');
+}
+
+select.addEventListener( 'click', ClickCallback);
+select.addEventListener( 'click', ClickCallback1);
+
+select.removeEventListener('click', ClickCallback);
