@@ -200,3 +200,14 @@ select.addEventListener( 'click', ClickCallback);
 select.addEventListener( 'click', ClickCallback1);
 
 select.removeEventListener('click', ClickCallback);
+
+var element = document.createElement('div');
+
+element.style.cssText = " width:200px; height:20px; background:red;";
+
+
+element.onclick = function (){ alert('welcome');};
+
+//document.body.appendChild(element);
+var target = document.getElementById('gold');
+document.body.insertBefore(element, target);
