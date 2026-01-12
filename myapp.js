@@ -211,3 +211,4 @@ element.onclick = function (){ alert('welcome');};
 //document.body.appendChild(element);
 var target = document.getElementById('gold');
 document.body.insertBefore(element, target);
+
